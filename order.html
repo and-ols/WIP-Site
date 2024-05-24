@@ -23,16 +23,24 @@
       <a class="active" id="order" href="order.html">Order</a>
    </nav>
    
-   <main>
+   <main id="order-main">
       <form id="order-form" method="get" action="thankyou.html">
+         <fieldset id="order-info">
+            <legend>Information</legend>
 
-         <label class="top">First Name* <input type="text" id="fname" name="fname" placeholder="First Name" required></label>
+            <label class="top">First Name* <input type="text" id="fname" name="fname" placeholder="First Name" required></label>
+            <label class="top">Last Name* <input type="text" id="lname" name="lname" placeholder="Last Name" required></label>
 
-         <label class="top">Last Name* <input type="text" id="lname" name="lname" placeholder="Last Name" required></label>
+            <label class="top">Phone* <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" required></label>
+            <label class="top">Email* <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required></label>
 
-         <label class="top">Dated Wanted <input type="date" id="date" name="date" required></label>
+            <label class="top">Dated Wanted* <input type="date" id="date" name="date" required></label>
 
-         <button type="submit">Order!</button>
+            <label class="top">Comments <textarea type="description" id="description" cols="30" rows="10" placeholder="Please add any additional comments you would like for your order!"></textarea>
+         
+         </fieldset>
+
+         <button type="submit">Place Order!</button>
 
       </form>
 
