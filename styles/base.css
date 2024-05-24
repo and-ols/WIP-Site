@@ -1,0 +1,51 @@
+
+form fieldset{
+   margin: 2rem 0;
+   border: 10px solid rgb(85, 194, 228);
+   border-radius: 10px;
+   padding: 0.5rem 2%;
+   text-align: left;
+   padding: .5rem 2.5rem .5rem .5rem;
+}
+
+form legend{
+   background-color: rgb(133, 193, 211);
+   margin: 0 1rem;
+   padding: 0 .5rem;
+}
+
+form label.top input, textarea{
+   display: block;
+   padding-top: 1rem;
+   font-size: 1rem;
+   border: 2px solid #b4b4b4;
+   border-radius: 4px;
+   padding: .75rem;
+   color: black;
+   width: 100%;
+   background-color: #b4b4b4;
+}
+
+form label.top input:required {
+   border-left: red solid 6px;
+   border-right: red solid 6px;
+}
+
+form label.top input:required:valid {
+   border-left: green solid 6px;
+   border-right: green solid 6px;
+}
+
+
+
+@media (min-width: 800px) {
+
+   #order-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+
+   form fieldset{
+      grid-column: 1/2;
+   }
+}
