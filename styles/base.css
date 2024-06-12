@@ -15,6 +15,31 @@ a:link, a:visited {
    text-decoration: none;
 }
 
+header {
+   display: flex;
+   padding: .5rem;
+   text-align: center;
+}
+h1 {
+   padding: .5rem;
+}
+
+.navigation {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   background-color: aquamarine;
+   padding: .5rem;
+   font-size: x-large;
+   margin: 1rem 0rem;
+}
+
+.navigation a {
+   flex: 1 1 100%;
+   padding: .5rem;
+   justify-content: center;
+}
 
 
 
@@ -37,6 +62,8 @@ a:link, a:visited {
 
 
 
+
+/* -------- ORDER PAGE ----------- */
 
 form fieldset{
    margin: 2rem 0;
