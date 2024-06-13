@@ -2,9 +2,14 @@
 
    header {
       display: grid;
-      grid-template-columns: 400px 1fr;
+      grid-template-columns: 200px 1fr 100px;
       text-align: center;
       align-items: center;
+   }
+   header img {
+      justify-self: center;
+      width: 100%;
+      height: auto;
    }
 
    .navigation {
@@ -12,7 +17,6 @@
       padding: .5rem;
       font-size: larger;
    }
-
   .navigation a {
       padding: .5rem;
       justify-content: center;
@@ -33,13 +37,19 @@
    }
 
    footer {
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 200px 1fr;
       align-items: center;
+      text-align: center;
    }
-
+   footer img {
+      grid-column: 1/2;
+      justify-self: center;
+      width: 150px;
+      height: auto;
+   }
    footer p {
-      flex: 1 1 100%;
+      grid-column: 2/3;
    }
 
 
