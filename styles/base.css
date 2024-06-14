@@ -1,10 +1,17 @@
 :root {
-   --pink: #E8C7DE;
+   /* --pink: #E8C7DE;
    --dull-pink: #D9BDC5;
    --beige: #b19782;
    --khaki: #BCAF9C;
    --dull-purple: #908994;
-   --background: #d9bdc586;
+   --background: #d9bdc588; */
+
+   --pink: #E8C7DE;
+   --dull-pink: #72b5f3;
+   --beige: #72b5f3;
+   --khaki: #e9bf34;
+   --dull-purple: #a852188a;
+   --background: #e9f3fd;
 }
 
 body {
@@ -25,6 +32,7 @@ header {
    padding: .5rem;
    font-size: x-large;
    margin-bottom: 1rem;
+   border: #a85218 double 3px;
 }
 
 .navigation a {
@@ -56,6 +64,8 @@ h1 {
 
 footer {
    background-color: var(--beige);
+   overflow: hidden;
+   
 }
 
 
