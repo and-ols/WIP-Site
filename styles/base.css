@@ -1,26 +1,20 @@
 :root {
-   /* --pink: #E8C7DE;
-   --dull-pink: #D9BDC5;
-   --beige: #b19782;
-   --khaki: #BCAF9C;
-   --dull-purple: #908994;
-   --background: #d9bdc588; */
-
-   --pink: #E8C7DE;
-   --dull-pink: #72b5f3;
-   --beige: #72b5f3;
-   --khaki: #e9bf34;
-   --dull-purple: #a852188a;
-   --background: #e9f3fd;
+   --blue: #6cace4;
+   --yellow: #e9bf34;
+   --burnt-orange: #a852188a;
+   --white: #ffffff;
 }
 
 body {
-   background-color: var(--background);
+   background-color: var(--white);
 }
 
 header {
    display: grid;
-   background-color: var(--dull-pink);
+   grid-template-columns: 200px 1fr 100px;
+   text-align: center;
+   align-items: center;
+   background-color: var(--blue);
 }
 
 .navigation {
@@ -28,7 +22,7 @@ header {
    flex-direction: column;
    text-align: center;
    align-items: center;
-   background-color: var(--khaki);
+   background-color: var(--yellow);
    padding: .5rem;
    font-size: x-large;
    margin-bottom: 1rem;
@@ -39,11 +33,12 @@ header {
    flex: 1 1 100%;
    padding: .5rem;
    justify-content: center;
+
 }
 
 /* Navigation menu items hover */
 .navigation a:hover {
-   background-color: var(--dull-purple);
+   background-color: var(--burnt-orange);
    font-weight: 700;
 }
 
@@ -58,16 +53,82 @@ header {
    padding: .5rem;
    text-align: center;
 }
+header img {
+   justify-self: center;
+   width: 200px;
+   height: auto;
+}
 h1 {
    padding: .5rem;
 }
 
 footer {
-   background-color: var(--beige);
-   overflow: hidden;
-   
+   display: grid;
+   align-items: center;
+   background-color: var(--blue);
+}
+footer img {
+   grid-column: 1/2;
+   padding-left: .5rem;
+   justify-self: left;
+   width: 150px;
+   height: auto;
+}
+footer p {
+   grid-column: 2/3;
 }
 
+.menu::before {
+   content: "⏬";
+}
+
+.menu {
+   font-size: 1.5rem;
+   border: none;
+   border-radius: 1rem;
+   background-color: var(--white);
+   cursor: pointer;
+   padding: 1rem;
+   margin-left: .5rem;
+
+}
+
+.menu.open::before {
+   content: "⏫";
+   border-radius: 1rem;
+}
+
+/* Navigation menu */
+.navigation {
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+   background-color: var(--yellow);
+   display: none;
+}
+
+/* Navigation menu list items */
+.navigation a {
+   display: block;
+   padding: .5rem;
+   text-align: center;
+}
+
+/* Opens the navigation menu */
+.open {
+   display: flex;
+}
+
+#shortDescription {
+   padding: 0rem 1rem;
+   line-height: 1.5rem;
+}
+
+.productGallery {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
 
 

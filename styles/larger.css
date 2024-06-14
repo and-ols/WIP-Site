@@ -1,5 +1,4 @@
 @media (min-width: 800px) {
-
    header {
       display: grid;
       grid-template-columns: 200px 1fr 100px;
@@ -13,19 +12,22 @@
    }
 
    .navigation {
+      display: flex;
       flex-direction: row;
+      margin-bottom: .2rem;
+      font-size: 22px; /* x-large */
       padding: .5rem;
-      font-size: larger;
-   }
-  .navigation a {
-      padding: .5rem;
-      justify-content: center;
-   }
+  }
+  
+  /* Navigation menu items hover */
+  .navigation a:hover {
+      background-color: var(--);
+      color: black;
+      font-weight: 700;
+  }
 
    #shortDescription {
       text-align: center;
-      padding: 0rem 1rem;
-      line-height: 1.5rem;
       margin: 1rem 0rem;
    }
 
@@ -37,19 +39,13 @@
    }
 
    footer {
-      display: grid;
       grid-template-columns: 200px 1fr;
-      align-items: center;
       text-align: center;
    }
-   footer img {
-      grid-column: 1/2;
-      justify-self: center;
-      width: 150px;
-      height: auto;
-   }
-   footer p {
-      grid-column: 2/3;
+
+   /* hide menu button */
+   .menu {
+      display: none; 
    }
 
 
