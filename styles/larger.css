@@ -49,11 +49,30 @@
    }
 
 
+   /* ---------- ABOUT ME PAGE ---------- */
+   .about-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+   }
+
+   .about-card {
+      display: flex;
+      align-items: center;
+   }
+
+   #about-left {
+      grid-column: 1/2;
+      grid-row: 1/2;
+   }
+
+   #about-right {
+      grid-column: 2/3;
+      grid-row: 2/3;
+   }
 
 
-
-
-   /* -------- ORDER PAGE ----------- */
+   /* ---------- ORDER PAGE ---------- */
    #order-main {
       display: grid;
       grid-template-columns: 1fr 1fr;
