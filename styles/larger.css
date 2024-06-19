@@ -1,16 +1,19 @@
 @media (min-width: 800px) {
+   /* All headers on each page */
    header {
       display: grid;
       grid-template-columns: 200px 1fr 100px;
       text-align: center;
       align-items: center;
    }
+   /* Logo in the header on each page */
    header img {
       justify-self: center;
       width: 100%;
       height: auto;
    }
 
+   /* All of the navigation bars */
    .navigation {
       display: flex;
       flex-direction: row;
@@ -18,19 +21,21 @@
       font-size: 22px; /* x-large */
       padding: .5rem;
   }
-  
-  /* Navigation menu items hover */
-  .navigation a:hover {
-      background-color: var(--);
-      color: black;
-      font-weight: 700;
-  }
 
+     /* hide menu button */
+     .menu {
+      display: none; 
+   }
+
+  /* ---------- HOME PAGE ---------- */
+
+  /* The short description at the top of the page */
    #shortDescription {
       text-align: center;
       margin: 1rem 0rem;
    }
 
+   /* The pictures towards the bottom of the home page */
    .productGallery {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -38,14 +43,10 @@
       margin: 1rem 0rem;
    }
 
+   /* Styling for each footer */
    footer {
       grid-template-columns: 200px 1fr;
       text-align: center;
-   }
-
-   /* hide menu button */
-   .menu {
-      display: none; 
    }
 
 
