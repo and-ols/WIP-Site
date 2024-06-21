@@ -72,6 +72,11 @@
       grid-row: 2/3;
    }
 
+   /* ---------- CONTACT PAGE ---------- */
+   #contact-form {
+      width: 80%;
+   }
+
 
    /* ---------- ORDER PAGE ---------- */
    #order-main {

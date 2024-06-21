@@ -152,6 +152,12 @@ header h1 {
    line-height: 25px;
 }
 
+/* ---------- CONTACT PAGE ---------- */
+#contact-form input{
+   margin-bottom: 1rem;
+}
+
+
 
 /* -------- ORDER PAGE ----------- */
 form fieldset{
