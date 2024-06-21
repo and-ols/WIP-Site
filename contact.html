@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document TBD</title>
+   <meta name="description" content="A site about baked goods">
+   <meta name="author" content="Andrew Olson">
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/base.css">
+   <!-- <link rel="stylesheet" href="styles/medium.css"> -->
+   <link rel="stylesheet" href="styles/larger.css">
+   <script src="scripts/menuButton.js" defer></script>
+</head>
+
+<body>
+
+   <header>
+      <img class="profilePic" src="images/logo.webp" alt="Company logo" loading="lazy">
+      <h1>Empanadas De Argentina</h1>
+      <button class="menu" aria-label="Menu Button"></button>
+   </header>
+
+   <nav class="navigation">
+      <a  id="home" href="index.html">Home</a>
+      <a id="aboutMe" href="about.html">About Me</a>
+      <a class="active" id="contact" href="#">Contact</a>
+      <a id="order" href="order.html">Order</a>
+   </nav>
+   
+   <main id="contact-main">
+      <form id="contact-form" method="get" action="thankyou.html">
+         <fieldset id="contact-info">
+            <legend>Contact Information</legend>
+
+            <label class="top">First Name* <input type="text" id="fname" name="fname" placeholder="First Name" required></label>
+            <label class="top">Last Name* <input type="text" id="lname" name="lname" placeholder="Last Name" required></label>
+
+            <label class="top">Email* <input type="email" id="email" name="email" placeholder="youremail@gmail.com" required></label>
+
+
+            <label class="top">Comments <textarea type="description" id="description" cols="30" rows="10" placeholder="Please add any additional information for when I get back to you!"></textarea>
+         
+         </fieldset>
+
+         <button type="submit">Contact</button>
+
+      </form>
+   </main>
+   
+   <footer>
+    <img class="profilePic" src="images/logo.webp" alt="Company logo" loading="lazy">
+    <section>
+       <p>&copy; Aylin Murayama</p>
+       <p>Contact info: ----------------------</p>
+       <p>E-mail: email@email.com</p>
+    </section>
+ </footer>
+
+</body>
+
+</html>
