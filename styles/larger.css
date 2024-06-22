@@ -60,6 +60,8 @@
    .about-card {
       display: flex;
       align-items: center;
+      font-size: larger;
+      line-height: 2rem;
    }
 
    #about-left {
