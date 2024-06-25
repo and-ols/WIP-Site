@@ -153,9 +153,30 @@ header h1 {
 }
 
 /* ---------- CONTACT PAGE ---------- */
+#contact-form {
+   display: flex;
+}
+
 #contact-form input{
    margin-bottom: 1rem;
 }
+#contact-submit {
+   padding: 1rem;
+   border: none;
+   background-color: var(--yellow);
+   border-radius: .5rem;
+   align-self: center;
+   justify-self: flex-end;
+   font-size: larger;
+}
+
+button:hover {
+   cursor: pointer;
+   box-shadow: #a85218 1rem;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
 
 
 
