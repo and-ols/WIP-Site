@@ -76,8 +76,15 @@
 
    /* ---------- CONTACT PAGE ---------- */
    #contact-form {
-      width: 80%;
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      align-items: center;
    }
+
+
+
+   
 
 
    /* ---------- ORDER PAGE ---------- */
