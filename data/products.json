@@ -1,0 +1,36 @@
+{
+   "products" : [
+      {
+         "name": "Classic Beef Empanada",
+         "icon": "/images/beef-empanada.jpg",
+         "testimony" : "Best Classic Beef Empanada"
+      },
+      {
+         "name": "Chicken Empanada",
+         "icon": "/images/chicken-empanada.jpg",
+         "testimony" : "Best Chicken Empanada"
+      },
+      {
+         "name": "Spinach & Ricotta Empanada",
+         "icon": "/images/spin-rico-empananda.jpg",
+         "testimony" : "Best Spinach & Ricotta Empanada"
+      },
+
+      {
+         "name": "Golden White Loaf Bread",
+         "icon": "/images/white-bread.jpg",
+         "testimony" : "Best Golden White Loaf Bread"
+      },
+      {
+         "name": "Rustic Herb Focaccia Bread",
+         "icon": "/images/rustic-bread.jpg",
+         "testimony" : "Best Rustic Herb Focaccia Bread"
+      },
+
+      {
+         "name": "Dulce de Leche",
+         "icon": "/images/dulce-leche.jpg",
+         "testimony" : "best Dulce de Leche"
+      }     
+   ]
+}

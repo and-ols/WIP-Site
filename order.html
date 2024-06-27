@@ -4,27 +4,80 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document TBD</title>
-   <meta name="description" content="The order page to place orders">
+   <meta name="description" content="A site about baked goods">
    <meta name="author" content="Andrew Olson">
-   <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+   <link rel="stylesheet" href="styles/normalize.css">
    <link rel="stylesheet" href="styles/base.css">
    <!-- <link rel="stylesheet" href="styles/medium.css"> -->
-   <!-- <link rel="stylesheet" href="styles/larger.css"> -->
+   <link rel="stylesheet" href="styles/larger.css">
+   <script src="scripts/menuButton.js" defer></script>
 </head>
 
 <body>
 
    <header>
-
+      <img class="profilePic" src="images/logo.webp" alt="Company logo" loading="lazy">
+      <h1>Empanadas De Argentina</h1>
+      <button class="menu" aria-label="Menu Button"></button>
    </header>
 
    <nav class="navigation">
-      <a id="home" href="#">Home</a>
+      <a  id="home" href="index.html">Home</a>
+      <a id="aboutMe" href="about.html">About Me</a>
+      <a id="contact" href="contact.html">Contact</a>
       <a class="active" id="order" href="order.html">Order</a>
    </nav>
    
    <main id="order-main">
+
+      
+      <section class="order-menu">
+         <section>
+            <h3><strong>Empanadas:</strong> (All come baked and ready to enjoy!)</h3>
+            <ul>
+               <li><strong>Classic Beef:</strong> Savory ground beef filling with traditional spices. ($4 each)</li>
+               <li><strong>Chicken:</strong> Shredded chicken with a homemade flavorful tomato based sauce. ($4.50 each)</li>
+               <li><strong>Spinach & Ricotta:</strong> Creamy ricotta cheese with fresh spinach. ($4 each)</li>
+            </ul>
+   
+            <h3><strong>Bread:</strong></h3>
+            <ul>
+               <li><strong>Golden White Loaf:</strong> A classic white loaf, perfect for sandwiches or toasting. ($6)</li>
+               <li><strong>Rustic Herb Focaccia:</strong> A flavorful focaccia bread with fresh herbs. ($8)</li>
+            </ul>
+   
+            <h3><strong>Dulce de Leche:</strong></h3>
+            <ul>
+               <li><strong>Jar of Homemade Dulce de Leche:</strong>Spread the joy! ($8)</li>
+            </ul>
+   
+            <p><strong>Please note:</strong> Minimum order is $20</p>
+         </section>
+      
+         <img id="order-img" src="images/Gemini_Generated_Image_hw2bq2hw2bq2hw2b.jpg" height="400px" width="400px" alt="Baking utensils"  loading="lazy">
+      </section>
+
+      
+
       <form id="order-form" method="get" action="thankyou.html">
+
+         <fieldset id="order-section">
+            <legend>Order Contents</legend>
+
+            <h3>Empanadas:</h3>
+            <label for="empanada-beef">Classic Beef ($4 each): <input type="number" id="empanada-beef" name="empanada-beef" min="0" placeholder="Input desired amount"></label>
+            <label for="empanada-chicken">Chicken ($4.50 each): <input type="number" id="empanada-chicken" name="empanada-chicken" min="0" placeholder="Input desired amount"></label>
+            <label for="empanada-spinach">Spinach & Ricotta ($4 each): <input type="number" id="empanada-spinach" name="empanada-spinach" min="0" placeholder="Input desired amount"></label>
+      
+            <h3>Bread:</h3>
+            <label for="bread-white">Golden White Loaf ($6): <input type="number" id="bread-white" name="bread-white" min="0" placeholder="Input desired amount"></label>
+            <label for="bread-focaccia">Rustic Herb Focaccia ($8): <input type="number" id="bread-focaccia" name="bread-focaccia" min="0" placeholder="Input desired amount"></label>
+   
+            <h3>Dulce de Leche:</h3>
+            <label for="dulce-leche">Jar of Homemade Dulce de Leche ($8): <input type="number" class="dulce-leche" id="dulce-leche" name="dulce-leche" min="0" placeholder="Input desired amount"></label>
+
+         </fieldset>
+
          <fieldset id="order-info">
             <legend>Information</legend>
 
@@ -37,17 +90,10 @@
             <label class="top">Dated Wanted* <input type="date" id="date" name="date" required></label>
 
             <label class="top">Comments <textarea type="description" id="description" cols="30" rows="10" placeholder="Please add any additional comments you would like for your order!"></textarea>
-         
          </fieldset>
 
-         <button type="submit">Place Order!</button>
-
+         <button id="order-submit" type="submit">Place Order!</button>
       </form>
-
-
-
-
-
    </main>
    
    <footer>
