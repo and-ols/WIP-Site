@@ -165,7 +165,7 @@ form label.top input:required:valid {
    border-right: green solid 6px;
 }
 
-#contact-submit, #order-submit{
+#contact-submit, #order-submit {
    padding: 1rem;
    border: none;
    background-color: var(--yellow);
@@ -200,8 +200,12 @@ header h1 {
    flex: 1; 
    margin-bottom: 20px;
    text-align: center; 
+   padding: 0rem 1rem;
+   border: 5px double var(--yellow);
+   max-width: 600px;
+   margin: .5rem;
+   /* background-color: var(--blue); */
 }
-
 
 /* ---------- ABOUT ME PAGE ---------- */
 #about-title {
@@ -213,6 +217,10 @@ header h1 {
    text-align: center;
    margin-bottom: 3rem;
    line-height: 25px;
+}
+
+.about-cards img{
+   border-radius: 1rem;
 }
 
 /* ---------- CONTACT PAGE ---------- */
@@ -232,7 +240,7 @@ header h1 {
    margin: 1rem;
 }
 
-#contact-img {
+#contact-img, #order-img {
    display: none;
 }
 
@@ -246,4 +254,10 @@ header h1 {
    display: flex;
    flex-direction: column;
 }
+
+#order-main {
+   margin: 0rem 1rem;
+}
+
+
 

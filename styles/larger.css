@@ -36,13 +36,7 @@
       font-size: larger;
    }
 
-   /* The pictures towards the bottom of the home page */
-   .productGallery {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      text-align: center;
-      margin: 1rem 0rem;
-   }
+
 
    /* Styling for each footer */
    footer {
@@ -53,18 +47,21 @@
    #productGallery {
       display: flex; 
       flex-wrap: wrap; 
-      justify-content: space-between; 
+      justify-content: space-around; 
       margin: 0 auto;
       width: 80%;
    }
     
    .product {
-      flex: 1 0 33.33%; 
+      flex: 1 0 33.33%;
+      justify-content: space-between; 
+      margin: 1rem;
    }
    
    .product img {
       max-height: 300px;
       width: auto;
+      border-radius: .5rem;
    }
 
 
@@ -82,11 +79,6 @@
       align-items: center;
       font-size: larger;
       line-height: 2rem;
-   }
-
-   .about-cards img{
-      border-radius: 1rem;
-
    }
 
    #about-left {
@@ -116,7 +108,7 @@
       align-self: center;
       margin-bottom: 4rem;
       border-radius: 1rem;
-      box-shadow: 0 18px 20px 0 var(--yellow), 0 23px 50px 0 var(--yellow);
+      /* box-shadow: 0 18px 20px 0 var(--yellow), 0 23px 50px 0 var(--yellow); */
    }
 
    #contact-form {
@@ -134,7 +126,8 @@
    #order-img {
       grid-column: 2/3;
       justify-self: center;
-      
+      display: block;   
+      border-radius: .5rem;   
    }
 
    #order-form {

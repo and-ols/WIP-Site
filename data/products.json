@@ -19,18 +19,18 @@
       {
          "name": "Golden White Loaf Bread",
          "icon": "/images/white-bread.jpg",
-         "testimony" : "Best Golden White Loaf Bread"
+         "testimony" : "Forget flimsy store-bought slices! This Golden White Loaf is a revelation. The first thing that hits you is the beautiful golden brown crust - it practically begs to be toasted. But slice it open, and you're greeted by the dreamiest, softest white interior that just melts in your mouth."
       },
       {
          "name": "Rustic Herb Focaccia Bread",
          "icon": "/images/rustic-bread.jpg",
-         "testimony" : "Best Rustic Herb Focaccia Bread"
+         "testimony" : "This isn't your average bakery focaccia. This version is all about the rustic charm. The crust is thick and slightly uneven, hinting at the magic that happened in the oven. But take a bite, and you're met with a symphony of textures - a satisfying crunch from the crust giving way to a soft, airy interior."
       },
 
       {
          "name": "Dulce de Leche",
          "icon": "/images/dulce-leche.jpg",
-         "testimony" : "best Dulce de Leche"
+         "testimony" : "Move over, Nutella! Sofia's homemade dulce de leche is the new star of my pantry. This isn't your average grocery store caramel; it's rich, creamy, and has a deep caramel flavor that's simply divine. The first time I opened the jar, the aroma hit me like a warm hug. It smells like childhood memories and cozy nights in. One spoonful, and I was hooked. The texture is smooth and luxurious, perfect for spreading on toast, pancakes, or even just eating straight from the jar."
       }     
    ]
 }
