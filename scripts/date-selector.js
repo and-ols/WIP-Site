@@ -1,19 +1,16 @@
-function validateDate(selectedDate) {
-   const today = new Date();
-   const twoWeeks = 14 * 24 * 60 * 60 * 1000;
-   const maxDate = new Date(today.getTime() + twoWeeks);
-   return selectedDate <= maxDate;
- }
+function restrictDate() {
+// Get today's date
+var today = new Date();
 
- const form = document.getElementById("order-form");
- form.addEventListener("submit", function(event) {
-   event.preventDefault(); // Prevent default form submission
+// Calculate the minimum allowed date (one week before today)
+var minDate = new Date(today.getTime() + (6 * 24 * 60 * 60 * 1000));
 
-   const selectedDate = new Date(document.getElementById("date").value);
-   if (validateDate(selectedDate)) {
-     console.log("Valid date selected!");
-     // You can perform further actions here (e.g., submit form data using AJAX)
-   } else {
-     alert("Please select a date within the next two weeks.");
-   }
- });
+// Get the date input element
+var dateInput = document.getElementById("date");
+
+// Set the minimum allowed date for the input
+dateInput.setAttribute("min", minDate.toISOString().split('T')[0]);
+}
+
+// Call the function to apply the restriction on page load
+window.onload = restrictDate();
