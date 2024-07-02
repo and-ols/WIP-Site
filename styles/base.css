@@ -207,6 +207,24 @@ header h1 {
    /* background-color: var(--blue); */
 }
 
+#announcement {
+   display: flex;
+   justify-content: center;
+   border: 8px groove var(--yellow);
+   background-color: var(--blue);
+   padding: .5rem 1rem;
+   font-weight: 700;
+   font-size: larger;
+}
+
+.close-button {
+   background-color: var(--accent3);
+   cursor: pointer;
+   font-size: x-large;
+   margin-left: 2rem;
+   border: none;
+}
+
 /* ---------- ABOUT ME PAGE ---------- */
 #about-title {
    text-align: center;
